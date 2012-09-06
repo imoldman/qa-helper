@@ -21,7 +21,7 @@ $(function() {
         }
 
         // 恢复每一行的颜色设置
-        tds = $('#watcherlist td:first-child');
+        tds = $('#watcherlist>tbody>tr>td:first-child');
         tds.each(function() {
             var _id = $(this).next().text();
             if (data[_id]) {
